@@ -1,34 +1,44 @@
 # Lab-04
 ## Exercise 1 - Handling Conflicts
+### Overview
+In this exercise, we will handle merge conflicts  
 
-#### Cloning a repo
+#### <u>Cloning a repo </u>
 - Go to a playground folder using explorer (c:\temp, for example)
 - Right click inside the folder and select 'GitExt Clone...'
-- Paste the URL https://github.com/noama-demo/Lab04-ex1.git and choose clone
+- Paste the URL C:\GitServer\labs\Lab03-ex1 and choose clone
+- Right click inside/on the folder and select 'GitExt open repository'
 
-#### Setting Beyhond Compare or other diff / merge tool
-1. On the Button Bar, click the 'Cog' wheel
+#### <u>Setting Beyhond Compare or other diff / merge tool </u>
+1. On the Button Bar, click the <i>Settings</i> cog/wheel
 2. On the left pane, go to Git -> Config
 3. Change mergetool to whichever tool you use
 4. Press OK
 
-#### Merging with conflict - Abort
-- Checkout master branch
-- Right Click the feature branch and merge it to master
+#### <u>Merging with conflict - Abort </u>
+- On the left pane, right click <i>Remotes -> Origin -> feature</i> branch and select <i>Fetch & Checkout</i>. Select <i>checkout</i> if required.
+- On the left pane, right click <i>Remotes -> Origin -> master</i> branch and select <i>Fetch & Checkout</i>. Select <i>checkout</i> if required.
+- On the left panel, right click <i>feature</i> and choose <i>merge</i>
+- Select <i>always create new merge commit</i> and <i>merge</i>
 - Conflicts occure - read the message and Click OK
 - Click 'No' to avoid solving conflicts
 - On the upper part - Click 'Abort'
 - You are back to state before the merge
 
-#### Conflict origin
-- Compare the master and feature branch
-    - Select master branch commit
-    - Also select feature branch commit
-    - Check Split View Diff for the conflicts
+#### <u>Conflict origin </u>
+- Compare the <i>master</i> and <i>feature</i> branch
+    - Select <i>master</i> branch commit
+    - Also select <i>feature</i> branch commit
+    - Check <i>Split View -> Diff</i> for the conflicts
+        - Check the <i>demo-script.ps1</i> file
+        - Ignore <i>Readme.md</i> file. It is irrelevant for this exercise
+        - Ignore <i>Unique diff BASE</i>. It is irrelevant for this exercise
 
-#### Merging with conflict - Resolve
-- Checkout master branch
-- Right Click the feature branch and merge it to master
+#### <u>Merging with conflict - Resolve </u>
+- On the left pane, right click <i>Remotes -> Origin -> feature</i> branch and select <i>Fetch & Checkout</i>. Select <i>checkout</i> if required.
+- On the left pane, right click <i>Remotes -> Origin -> master</i> branch and select <i>Fetch & Checkout</i>. Select <i>checkout</i> if required.
+- On the left panel, right click <i>feature</i> and choose <i>merge</i>
+- Select <i>always create new merge commit</i> and <i>merge</i>
 - Conflicts occure - read the message and Click OK
 - Click 'Yes' to resolve conflicts
 - View the file list and open demo-script1.ps in BC
@@ -56,7 +66,7 @@
     - Complete the merge commit by pressing 'Commit'
 - Review the master demo-script.ps1 file
 
-#### Mail the results
+#### <u>Mail the results </u>
 - To: <TBD>
 - Topic: conflicts
 - Body: demo-script.ps1 content (not file, since its ps1 and will be blocked)
